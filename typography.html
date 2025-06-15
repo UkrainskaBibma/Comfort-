@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+<head>
+    <title>Опис</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7CPoppins:400%7CTeko:300,400">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .ie-panel {
+            display: none;
+            background: #212121;
+            padding: 10px 0;
+            box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);
+            clear: both;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {
+            display: block;
+        }
+
+        /* Custom styles for rights section */
+        .rights-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px; /* Space between columns */
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .rights-column {
+            flex: 1 1 48%; /* Allows columns to grow/shrink, taking roughly half width */
+            min-width: 300px; /* Minimum width before wrapping */
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-color: #f9f9f9;
+        }
+
+            .rights-column h2,
+            .rights-column h1 {
+                color: #2c3e50;
+                font-family: 'Arial', sans-serif;
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 24px;
+            }
+
+            .rights-column p {
+                font-family: 'Verdana', sans-serif;
+                font-size: 15px;
+                line-height: 1.7;
+                color: #34495e;
+                text-align: justify;
+            }
+
+            .rights-column strong {
+                color: #2980b9;
+                display: block; /* Make strong tags take full width for better readability */
+                margin-bottom: 5px;
+                font-size: 16px;
+            }
+
+        /* Styles for the quote section */
+        .quote-columns-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 50px;
+            justify-content: center; /* Center quotes if there aren't enough to fill two rows */
+        }
+
+        .quote-column-item {
+            flex: 1 1 calc(50% - 15px); /* Two columns, accounting for gap */
+            box-sizing: border-box;
+            padding: 25px;
+            border-left: 5px solid #2980b9;
+            background-color: #f0f8ff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            min-width: 280px; /* Ensure readability on smaller screens */
+        }
+
+            .quote-column-item .quote-text {
+                font-family: 'Georgia', serif;
+                font-size: 1.1em;
+                line-height: 1.6;
+                color: #333;
+                margin-bottom: 15px;
+                font-style: italic;
+            }
+
+            .quote-column-item .quote-author {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                color: #555;
+                text-align: right;
+                font-size: 0.95em;
+            }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .rights-column {
+                flex: 1 1 100%; /* Stack columns on smaller screens */
+            }
+
+            .quote-column-item {
+                flex: 1 1 100%; /* Stack quotes on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer Browse experience, upgrade for free today."></a></div>
+    <div class="preloader">
+        <div class="preloader-body">
+            <div class="cssload-container">
+                <div class="cssload-speeding-wheel"></div>
+            </div>
+            <p>Завантаження...</p>
+        </div>
+    </div>
+    <div class="page">
+        <header class="section page-header">
+            <div class="rd-navbar-wrap">
+                <nav class="rd-navbar rd-navbar-corporate" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="106px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+                    <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
+                    <div class="rd-navbar-aside-outer">
+                        <div class="rd-navbar-aside">
+                            <div class="rd-navbar-panel">
+                                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                                <div class="rd-navbar-brand">
+                                    <a class="brand" href="index.html"><img src="logo.jpg" alt="" width="225" height="18" /></a>
+                                </div>
+                            </div>
+                            <div class="rd-navbar-aside-right rd-navbar-collapse">
+                                <ul class="rd-navbar-corporate-contacts">
+                                    <li>
+                                        <div class="unit unit-spacing-xs">
+                                            <div class="unit-left"><span class="icon fa fa-clock-o"></span></div>
+                                            <div class="unit-body">
+                                                <p>08:00 - 00:00</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="unit unit-spacing-xs">
+                                            <div class="unit-left"><span class="icon fa fa-phone"></span></div>
+                                            <div class="unit-body"><a class="link-phone" href="tel:#">+380 66 60 55 569</a></div>
+                                        </div>
+                                    </li>
+                                </ul><a class="button button-md button-default-outline-2 button-ujarak" href="https://docs.google.com/forms/d/e/1FAIpQLSd0EWfA-SKVwAcNio2Cx25gtMIOViYuWjw0h74zO1FCmMTSyQ/viewform?usp=dialog">Замовляйте авто саме у нас!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rd-navbar-main-outer">
+                        <div class="rd-navbar-main">
+                            <div class="rd-navbar-nav-wrap">
+                                <ul class="list-inline list-inline-md rd-navbar-corporate-list-social">
+                                    <li><a class="icon fa fa-facebook" href="https://vk.com/s.kumanets"></a></li>
+                                    <li><a class="icon fa fa-google-plus" href="https://mail.google.com/mail/u/0/#inbox"></a></li>
+                                    <li><a class="icon fa fa-instagram" href="https://www.instagram.com/sasha.kumanets/?next=%2F"></a></li>
+                                </ul>
+                                <ul class="rd-navbar-nav">
+                                    <li class="rd-nav-item">
+                                        <a class="rd-nav-link" href="index.html">Головна</a>
+                                    </li>
+                                    <li class="rd-nav-item">
+                                        <a class="rd-nav-link" href="about.html">Про нас</a>
+                                    </li>
+                                    <li class="rd-nav-item active">
+                                        <a class="rd-nav-link" href="typography.html">Опис</a>
+                                    </li>
+                                    <li class="rd-nav-item">
+                                        <a class="rd-nav-link" href="contact-us.html">Зв'яжіться з нами</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section class="breadcrumbs-custom-inset">
+            <div class="breadcrumbs-custom context-dark bg-overlay-60">
+                <div class="container">
+                    <h2 class="breadcrumbs-custom-title">Опис</h2>
+                    <ul class="breadcrumbs-custom-path">
+                        <li><a href="index.html">Головна</a></li>
+                        <li class="active">Опис</li>
+                    </ul>
+                </div>
+                <div class="box-position" style="background-image: url(K.jpg);"></div>
+            </div>
+        </section>
+
+
+        <h1 class="text-center" style="color: #2c3e50; font-family: 'Montserrat', sans-serif; margin-bottom: 40px;">Вас вітає автосалон прокату авто "Comfort+" Просимо ознайомитись з правилами нашого салону!</h1>
+        <h2 class="text-center" style="color: #2c3e50; font-family: 'Montserrat', sans-serif; margin-bottom: 40px;">Просимо ознайомитись з правилами нашого салону!</h2>
+
+        <section class="section section-sm section-first bg-default text-left">
+            <div class="container">
+                <div class="row row-40 flex-lg-row-reverse justify-content-xl-between">
+                    <div class="col-xl-5 d-none d-xl-block">
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="rights-section">
+                            <div class="rights-column">
+
+                                <h1>Політичні права автосалону "Comfort+"</h1>
+                                <p>
+                                    <strong>Право законодавчої ініціативи на місцевому рівні у сфері автомобільного бізнесу:</strong> "Comfort+" міг би мати право подавати пропозиції до місцевої ради щодо вдосконалення регулювання продажу, обслуговування та оподаткування автомобілів у межах міста чи області. Це право могло б бути обумовлене значним внеском салону в місцевий бюджет або його соціальною значущістю.
+                                    <br><br>
+                                    <strong>Право консультативного голосу в муніципальних комісіях з питань транспорту та інфраструктури:</strong> Представники "Comfort+" могли б мати право брати участь у засіданнях міських комісій, що займаються питаннями дорожнього руху, паркування, розвитку транспортної інфраструктури, і висловлювати свою думку як експерти автомобільного ринку.
+                                    <br><br>
+                                    <strong>Право на офіційне партнерство з місцевою владою у проведенні соціальних та екологічних автомобільних ініціатив:</strong> "Comfort+" міг би мати закріплене право на спільну організацію заходів з міською адміністрацією, спрямованих на популяризацію безпеки дорожнього руху, екологічно чистих автомобілів або підтримку соціально незахищених верств населення через надання транспортних засобів чи послуг.
+                                    <br><br>
+                                    <strong>Право на отримання спеціальних дозволів та ліцензій у спрощеному порядку:</strong> Враховуючи значний внесок у місцеву економіку та створення робочих місць, "Comfort+" міг би мати право на прискорену процедуру отримання певних адміністративних дозволів, необхідних для ведення бізнесу.
+                                    <br><br>
+                                    <strong>Право на представництво інтересів місцевого автомобільного бізнесу в регіональних бізнес-асоціаціях:</strong> "Comfort+" міг би мати гарантоване місце у керівних органах регіональних об'єднань підприємців автомобільної сфери, що давало б змогу впливати на формування спільної позиції та лобіювати інтереси галузі на вищому рівні.
+                                </p>
+                            </div>
+
+                            <div class="rights-column">
+                                <h2>Приватні права автосалону "Comfort+"</h2>
+                                <p>
+                                    <strong>Право на ексклюзивне представництво певних автомобільних брендів у регіоні:</strong> "Comfort+" міг би мати контрактні домовленості з виробниками, які надавали б йому виняткове право продажу та обслуговування їхніх автомобілів на певній території, захищаючи від конкуренції з боку інших дилерів цих марок.
+                                    <br><br>
+                                    <strong>Право власності на унікальні технології обслуговування та ремонту автомобілів:</strong> "Comfort+" міг би розробити та запатентувати власні методи діагностики, ремонту або тюнінгу автомобілів, які б становили його комерційну таємницю та надавали б конкурентну перевагу.
+                                    <br><br>
+                                    <strong>Право на використання спеціалізованого програмного забезпечення для управління клієнтською базою та продажами з обмеженим доступом для конкурентів:</strong> "Comfort+" міг би володіти унікальною CRM-системою або іншим програмним забезпеченням, розробленим спеціально для його потреб, доступ до якого був би обмежений для інших автосалонів.
+                                    <br><br>
+                                    <strong>Право на встановлення власних стандартів якості обслуговування, що перевищують загальноприйняті:</strong> "Comfort+" міг би запровадити внутрішні норми обслуговування клієнтів, гарантійних зобов'язань або післяпродажного сервісу, які були б вищими за вимоги законодавства та галузевих стандартів, і використовувати це як конкурентну перевагу.
+                                    <br><br>
+                                    <strong>Право на створення власної системи сертифікації вживаних автомобілів з підвищеними гарантіями:</strong> "Comfort+" міг би розробити власну програму сертифікації автомобілів з пробігом, яка б включала більш ретельну перевірку та розширені гарантійні умови, що відрізняло б його пропозиції від інших продавців вживаних авто.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        ---
+
+        <section class="section section-sm bg-default text-left">
+            <div class="container">
+                <h2 class="text-center" style="color: #2c3e50; font-family: 'Montserrat', sans-serif; margin-bottom: 40px;">Блок-цитати наших клієнтів про автосалон та прокат</h2>
+                <div class="quote-columns-section">
+                    <div class="quote-column-item">
+                        <p class="quote-text">"Завдяки 'Comfort+' я знайшов свій ідеальний сімейний автомобіль. Процес покупки був напрочуд легким, а персонал виявився дуже уважним до всіх моїх побажань. Рекомендую!"</p>
+                        <p class="quote-author">– Анна К., задоволений покупець</p>
+                    </div>
+                    <div class="quote-column-item">
+                        <p class="quote-text">"Брали авто на прокат для весілля. Автомобіль був у ідеальному стані, чистий та комфортний. Сервіс на висоті, все оформили швидко і без проблем. Дякуємо!"</p>
+                        <p class="quote-author">– Максим та Вікторія, молодята</p>
+                    </div>
+                    <div class="quote-column-item">
+                        <p class="quote-text">"Обслуговування в 'Comfort+' завжди на вищому рівні. Тут не тільки продають якісні авто, а й надають чудовий сервіс після продажу. Я вже кілька років довіряю їм свій автомобіль."</p>
+                        <p class="quote-author">– Олег П., постійний клієнт</p>
+                    </div>
+                    <div class="quote-column-item">
+                        <p class="quote-text">"Потрібен був автомобіль для ділової поїздки – 'Comfort+' надав ідеальне рішення. Сучасний автопарк, гнучкі умови оренди та приємні менеджери. Скористаюся ще не раз!"</p>
+                        <p class="quote-author">– Ірина В., бізнес-леді</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="section footer-corporate context-dark">
+            <div class="footer-corporate-inset">
+                <div class="container">
+                    <div class="row row-40 justify-content-lg-between">
+                        <div class="col-sm-6 col-md-12 col-lg-3 col-xl-4">
+                            <div class="oh-desktop">
+                                <div class="wow slideInRight" data-wow-delay="0s">
+                                    <h6 class="text-spacing-100 text-uppercase">ЗВ'ЯЖІТЬСЯ З НАМИ</h6>
+                                    <ul class="footer-contacts d-inline-block d-sm-block">
+                                        <li>
+                                            <div class="unit">
+                                                <div class="unit-left"><span class="icon fa fa-phone"></span></div>
+                                                <div class="unit-body"><a class="link-phone" href="tel:#">+380 66 60 55 569</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="unit">
+                                                <div class="unit-left"><span class="icon fa fa-envelope"></span></div>
+                                                <div class="unit-body"><a class="link-aemail" href="mailto:#">comfortua@gmail.com</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="unit">
+                                                <div class="unit-left"><span class="icon fa fa-location-arrow"></span></div>
+                                                <div class="unit-body"><a class="link-location" href="https://www.google.com/maps?sca_esv=9d62b89f1e8f3e7d&output=search&q=%D0%B2%D1%96%D0%BD%D0%BD%D0%B8%D1%86%D1%8F&source=lnms&fbs=ABzOT_A0TEwl0NsDfBediTVTeVeHyr-cMZvAFuDqHkAI6_RcOn7bK3YDrfRmt_4YDZv3_yrb95IOveqhy0I7ZDiEeKUNLa7WTfyNYpAJ-K_commteOV1cS8OroanSeZsbXUe2kYcoGL1bBZKzuxsWvkK-6bYjsTvsI9UUiRgC-prWgnLOPgEnH80fndiKIWkGN7R9AxgjFYM9SC2etyiXCCowtF-CSxi-zc0kTxQACXj5zUvE_5Z4Hdmp6Z4T9_KtpMH_-wPV4oKBhKt87pe_ROKPOTn047FSA&entry=mc&ved=1t:200715&ictx=111">м.Вінниця</a></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-5 col-lg-3 col-xl-4">
+                            <div class="oh-desktop">
+                                <div class="wow slideInDown" data-wow-delay="0s">
+                                    <h6 class="text-spacing-100 text-uppercase">Популярні новини</h6>
+                                    <article class="post post-minimal-2">
+                                        <p class="post-minimal-2-title">
+                                            <a href="#">
+                                                Борис Джонсонюк взяв в оренду Wolkswagen Golf 7 в нашому салоні!
+                                            </a>
+                                        </p>
+                                        <div class="post-minimal-2-time">
+                                            <time datetime="2019-05-04">Квітень 12, 2023</time>
+                                        </div>
+                                    </article>
+                                    <article class="post post-minimal-2">
+                                        <p class="post-minimal-2-title"><a href="#">Наш салон отримав нагороду "Найкращий салон України!</a></p>
+                                        <div class="post-minimal-2-time">
+                                            <time datetime="2019-05-04">Травень 5, 2023</time>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-11 col-md-7 col-lg-5 col-xl-4">
+                            <div class="oh-desktop">
+                                <div class="wow slideInLeft" data-wow-delay="0s">
+                                    <h6 class="text-spacing-100 text-uppercase">Швидкі посилання</h6>
+                                    <ul class="row-6 list-0 list-marked list-marked-md list-marked-secondary list-custom-2">
+                                        <li><a href="contact-us.html">Зв'яжіться з нами</a></li>
+                                        <li><a href="index.html#avto">Наші авто</a></li>
+                                        <li><a href="index.html#staff">Наша команда</a></li>
+                                        <li><a href="index.html#gallery">Галерея</a></li>
+                                    </ul>
+                                    <div class="group-md group-middle justify-content-sm-start"><a class="button button-lg button-primary button-ujarak" href="contact-us.html">Будемо на зв'язку</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-corporate-bottom-panel">
+                <div class="container">
+                    <div class="row justfy-content-xl-space-berween row-10 align-items-md-center2">
+                        <div class="col-sm-6 col-md-4 text-sm-right text-md-center">
+                        </div>
+                        <div class="col-sm-6 col-md-4 order-sm-first">
+                        </div>
+                    </div>
+                </div>
+        </footer>
+    </div>
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
